@@ -344,7 +344,7 @@ class GuardedModelAdmin(admin.ModelAdmin):
 
 
 class UserManage(forms.Form):
-    user = forms.RegexField(label=_("Username"), max_length=30,
+    user = forms.RegexField(label=_("Username"), max_length=255,
         regex=r'^[\w.@+-]+$',
         error_messages = {
             'invalid': _("This value may contain only letters, numbers and "
