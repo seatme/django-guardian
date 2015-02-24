@@ -405,7 +405,7 @@ class GuardedModelAdmin(GuardedModelAdminMixin, admin.ModelAdmin):
 
 class UserManage(forms.Form):
     user = forms.CharField(label=_("User identification"),
-                        max_length=200,
+                        max_length=255,
                         error_messages = {'does_not_exist': _("This user does not exist")},
                         help_text=_('Enter a value compatible with User.USERNAME_FIELD')
                      )
